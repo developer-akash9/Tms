@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - TMS</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <img src="images/tms-logo.jpg" alt="TMS Logo" class="logo-img">
+        </a>
+        <nav class="nav-desktop">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-container">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <h1 class="page-title">Contact Us</h1>
+          <p class="page-description">
+            We're here to help with all your tax and financial service needs
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info-container">
+            <div class="contact-header">
+              <h2 class="section-title">Get In Touch</h2>
+              <p class="section-description">
+                Have questions or need assistance? Reach out to us using any of the methods below or fill out the
+                contact form.
+              </p>
+            </div>
+
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Our Office</h3>
+                  <p>TMS Office, 2nd Floor , Burud Building, Ajara- 416505</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Phone</h3>
+                  <p>+91 8454034044</p>
+                  <p>+91 93701 38720</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Email</h3>
+                  <p>totalsolutions107@gmail.com</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="business-hours">
+              <h3>Business Hours</h3>
+              <div class="hours-list">
+                <div class="hours-item">
+                  <span class="day">Monday - Saturday</span>
+                  <span class="time">9:00 AM - 6:00 PM</span>
+                </div>
+                <div class="hours-item">
+                  <span class="day">Sunday</span>
+                  <span class="time">Closed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Send Us a Message</h3>
+                <p class="card-description">
+                  Fill out the form below and we'll get back to you as soon as possible.
+                </p>
+              </div>
+              <div class="card-content">
+                <form id="contact-page-form" class="contact-form">
+                  <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" placeholder="Your name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" placeholder="Your email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-phone">Phone</label>
+                    <input type="text" id="contact-phone" placeholder="Your phone number" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-service">Service Interested In</label>
+                    <select id="contact-service">
+                      <option value="">Select a service</option>
+                      <option value="e-tendering">E-Tendering</option>
+                      <option value="income-tax">Income Tax Return</option>
+                      <option value="gst">GST</option>
+                      <option value="audit">Audit</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" placeholder="Your message" rows="4" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+                <div id="contact-form-success" class="form-success hidden">
+                  <i class="fas fa-check-circle"></i>
+                  <h3>Thank You!</h3>
+                  <p>Your message has been received. We'll get back to you shortly.</p>
+                  <button class="btn btn-primary" id="contact-send-another">Send Another Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Find Us</h2>
+          <p class="section-description">Visit our office for a face-to-face consultation</p>
+        </div>
+        <div class="map-container">
+          <!-- Placeholder for map - in a real implementation, you would use Google Maps or similar -->
+          <div class="map-placeholder">
+            <p>Interactive Map Would Be Displayed Here</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3 class="footer-title">TMS</h3>
+          <p class="footer-description">
+            Your trusted partner for comprehensive tax consultancy and financial services
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html">E-Tendering</a></li>
+            <li><a href="services.html">Income Tax Return</a></li>
+            <li><a href="services.html">GST</a></li>
+            <li><a href="services.html">View All Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">Contact</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>TMS Office,2nd Floor, Burud Building, Ajara- 416505</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>+91 8454034044</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>totalsolutions107@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> TMS - Total Management Solution. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/919370138720" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

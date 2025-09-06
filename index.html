@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TMS - Total Management Solutions</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <img src="images/tms-logo.jpg" alt="TMS Logo" class="logo-img">
+        </a>
+        <nav class="nav-desktop">
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-container">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="primary-text">TMS -</span>
+            
+           <span class="typing-text">Total Management Solution</span>
+          </h1>
+          <p class="hero-description">
+            Your trusted partner for comprehensive tax consultancy and financial services
+          </p>
+          <a href="contact.html" class="btn btn-primary">
+            Get Started <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-description">
+            Comprehensive tax and financial services tailored to your needs
+          </p>
+        </div>
+        <div class="services-grid" id="services-grid">
+          <!-- Services will be added dynamically with JavaScript -->
+        </div>
+        <div class="section-footer">
+          <a href="services.html" class="btn btn-outline" bgcolor="red">
+            View All Services <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-description">Trusted by businesses across India</p>
+        </div>
+        <div class="testimonials-grid" id="testimonials-grid">
+          <!-- Testimonials will be added dynamically with JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Owner Section -->
+    <section class="owner-section">
+      <div class="container">
+        <div class="owner-grid">
+          <div class="owner-info">
+            <h2 class="section-title">Meet Our Director</h2>
+            <p class="section-description">
+              With over 10 years of experience in tax consultancy and financial services, our director leads a team of
+              experts dedicated to providing exceptional service.
+            </p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+91 8454034044</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>totalsolutions107@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>TMS Office, Ajara</span>
+              </div>
+            </div>
+          </div>
+          <div class="owner-image">
+            <div class="image-container">
+              <img src="images/kiran sir.png" alt="Director" class="rounded-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-description">
+            Have questions? Reach out to us for a consultation
+          </p>
+        </div>
+        <div class="contact-form-container">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Contact Us</h3>
+              <p class="card-description">Fill out the form below and we'll get back to you shortly.</p>
+            </div>
+            <div class="card-content">
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="text" id="phone" placeholder="Your phone number" required>
+                </div>
+                <div class="form-group">
+                  <label for="service">Service Interested In</label>
+                  <select id="service">
+                    <option value="">Select a service</option>
+                    <option value="e-tendering">E-Tendering</option>
+                    <option value="gram-panchayat">Gram Panchayat</option>
+                    <option value="panchayat-samiti">Panchayat Samiti</option>
+                    <option value="zilla-parishad">Zilla Parishad</option>
+                    <option value="pan-card">PAN Card</option>
+                    <option value="loan-insurance">Loan Insurance</option>
+                    <option value="epf">EPF</option>
+                    <option value="tds">TDS</option>
+                    <option value="income-tax">Income Tax Return</option>
+                    <option value="gst">GST</option>
+                    <option value="e-way-bills">E-Way Bills</option>
+                    <option value="institution-audit">Institution Audit</option>
+                    <option value="society-registration">Society Registration</option>
+                    <option value="din-kyc">DIN/KYC</option>
+                    <option value="12a-80g">12A & 80G</option>
+                    <option value="business-projects">Business Projects</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" placeholder="Your message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+              </form>
+              <div id="form-success" class="form-success hidden">
+                <i class="fas fa-check-circle"></i>
+                <h3>Thank You!</h3>
+                <p>Your message has been received. We'll get back to you shortly.</p>
+                <button class="btn btn-primary" id="send-another">Send Another Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3 class="footer-title">TMS</h3>
+          <p class="footer-description">
+            Your trusted partner for comprehensive tax consultancy and financial services
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html">E-Tendering</a></li>
+            <li><a href="services.html">Income Tax Return</a></li>
+            <li><a href="services.html">GST</a></li>
+            <li><a href="services.html">View All Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">Contact</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>TMS Office,2nd Floor, Burud Building, Ajara- 416505</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>+91 8454034044</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>totalsolutions107@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> TMS - Total Management Solution. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/919370138720" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
